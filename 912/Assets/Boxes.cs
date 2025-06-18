@@ -9,7 +9,7 @@ public class Boxes : MonoBehaviour
 
     private void Start()
     {
-        questionManager = FindObjectOfType<QusetionManager>();
+        questionManager = FindObjectOfType<QuestionManager>();
     }
 
     private void OnTriggerEnter(Collider other)

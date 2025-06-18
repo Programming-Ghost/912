@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class QuestionManager : MonoBehaviour
 {
@@ -69,5 +70,11 @@ public class QuestionManager : MonoBehaviour
             Debug.Log("إجابة خاطئة، حاول مرة أخرى.");
         }
     }
+    public void MarkQuestionSolved(string questionSceneName)
+    {
+        solvedQuestions.Add(questionSceneName);
+        SceneManager.LoadScene("sa7et ilmadraseh"); // العودة إلى المشهد الرئيسي
+    }
+
 
 }
