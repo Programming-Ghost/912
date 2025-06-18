@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2416da97109321488c8ad73587bc452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionSceneName: 
+  questionSceneName: try
 --- !u!4 &1150985437
 Transform:
   m_ObjectHideFlags: 0

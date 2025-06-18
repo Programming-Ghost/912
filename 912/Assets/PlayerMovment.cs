@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerMovment : MonoBehaviour
 {
-    public float speed = 5f;
-    public float sprintSpeed = 8f;
-    public float jumpForce = 7f;
+    public float speed = 10f;
+    public float sprintSpeed = 13f;
+    public float jumpForce = 12f;
     public float gravity = 9.8f;
 
     private CharacterController controller;
@@ -38,7 +38,7 @@ public class PlayerMovment : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Cardboard Box")) // عند لمس صندوق
+        if (other.CompareTag("Cardboard Box", "Cardboard Box (1)", "Cardboard Box (2)")) // عند لمس صندوق
         {
             string questionSceneName = other.gameObject.name; // اسم مشهد السؤال
             SceneManager.LoadScene(questionSceneName); // الانتقال إلى المشهد

@@ -1411,6 +1411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf966a9e20b4ee64bb0ca32af2017c32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questionText: {fileID: 0}
+  answerButtons: []
 --- !u!4 &442581492
 Transform:
   m_ObjectHideFlags: 0
@@ -6359,8 +6361,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.8510697, y: 1, z: 1}
+  m_Center: {x: -0.07446569, y: 0, z: -8.394583e-10}
 --- !u!23 &2027012591
 MeshRenderer:
   m_ObjectHideFlags: 0
