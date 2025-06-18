@@ -1770,9 +1770,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 16
-  sprintSpeed: 8
+  sprintSpeed: 20
   jumpForce: 7
-  gravity: 9.8
+  gravity: 7
 --- !u!1001 &558318805
 PrefabInstance:
   m_ObjectHideFlags: 0
