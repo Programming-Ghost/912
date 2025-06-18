@@ -5,11 +5,11 @@ using UnityEngine;
 public class Boxes : MonoBehaviour
 {
     public string questionSceneName; // اسم المشهد الخاص بالسؤال
-    private QustionManegar questionManager;
+    private QuestionManager questionManager;
 
     private void Start()
     {
-        questionManager = FindObjectOfType<QustionManegar>();
+        questionManager = FindObjectOfType<QusetionManager>();
     }
 
     private void OnTriggerEnter(Collider other)
