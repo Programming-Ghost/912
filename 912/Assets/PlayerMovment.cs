@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class PlayerMovment : MonoBehaviour
 {
     public float speed = 10f;
@@ -24,12 +25,18 @@ public class PlayerMovment : MonoBehaviour
 
         float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : speed;
 
-        moveDirection = transform.forward * moveZ + transform.right * moveX;
-        moveDirection *= currentSpeed;
+        Vector3 direction = transform.forward * moveZ + transform.right * moveX;
+        moveDirection.x = direction.x * currentSpeed;
+        moveDirection.z = direction.z * currentSpeed;
 
-        if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
+        if (controller.isGrounded)
         {
-            moveDirection.y = jumpForce;
+            moveDirection.y = -1f;
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                moveDirection.y = jumpForce;
+            }
         }
 
         moveDirection.y -= gravity * Time.deltaTime;
@@ -40,9 +47,8 @@ public class PlayerMovment : MonoBehaviour
     {
         if (other.CompareTag("Cardboard Box")) // عند لمس صندوق
         {
-            string questionSceneName = other.gameObject.name; // اسم مشهد السؤال
-            SceneManager.LoadScene(questionSceneName); // الانتقال إلى المشهد
+            string questionSceneName = other.gameObject.name;
+            SceneManager.LoadScene(questionSceneName);
         }
     }
-
 }
