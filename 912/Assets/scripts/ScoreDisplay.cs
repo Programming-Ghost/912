@@ -8,6 +8,6 @@ public class ScoreDisplay : MonoBehaviour
     void Start()
     {
         int score = PlayerPrefs.GetInt("CorrectCount", 0);
-        yourUIText.text = score + " / 4";
+        yourUIText.text = score + " / 3";
     }
 }
