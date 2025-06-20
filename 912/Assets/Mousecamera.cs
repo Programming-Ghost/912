@@ -20,7 +20,7 @@ public class Mousecamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false; // Hide the cursor
+      
     }
 
     // Update is called once per frame
