@@ -1,80 +1,34 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class QuestionManager : MonoBehaviour
 {
-    public Text questionText; // عنصر `Text UI` لعرض السؤال
-    public Button[] answerButtons; // أزرار الإجابات
-    private string currentQuestionBox = ""; // اسم الصندوق الحالي
-    private HashSet<string> solvedQuestions = new HashSet<string>(); // حفظ الأسئلة المحلولة
+    public Button[] optionButtons;
+    public int correctAnswerIndex;
+    public string returnSceneName;
 
-    private Dictionary<string, string> boxToQuestion = new Dictionary<string, string>
+    void Start()
     {
-        { "Cardboard Box", "متى تأسست مدرسة دار العلوم؟" },
-        { "Cardboard Box(1)", "من كم طابق تتكون مدرسة دار العلوم؟" },
-        { "Cardboard Box(2)", "من كم قسم تتكون مدرسة دار العلوم؟" }
-    };
-
-    private Dictionary<string, string[]> boxToAnswers = new Dictionary<string, string[]>
-    {
-        { "Cardboard Box", new string[] { "1996", "1993" , "1999" ,"1995" } },
-        { "Cardboard Box(1)", new string[] { "3", "5", "2", "4" } },
-        { "Cardboard Box(2)", new string[] { "5", "1", "2", "3" } }
-    };
-
-    private Dictionary<string, int> correctAnswers = new Dictionary<string, int>
-    {
-        { "Cardboard Box", 1 },
-        { "Cardboard Box(1)", 0 },
-        { "Cardboard Box(2)", 3 }
-    };
-
-    public void OnBoxTouched(string boxName)
-    {
-        if (!solvedQuestions.Contains(boxName) && boxToQuestion.ContainsKey(boxName))
+        for (int i = 0; i < optionButtons.Length; i++)
         {
-            currentQuestionBox = boxName;
-            DisplayQuestion();
+            int index = i; // لحل مشكلة الـ Closure
+            optionButtons[i].onClick.AddListener(() => CheckAnswer(index));
         }
     }
 
-    private void DisplayQuestion()
+    void CheckAnswer(int selectedIndex)
     {
-        if (boxToQuestion.ContainsKey(currentQuestionBox))
-        {
-            questionText.text = boxToQuestion[currentQuestionBox];
-
-            for (int i = 0; i < answerButtons.Length; i++)
-            {
-                answerButtons[i].GetComponentInChildren<Text>().text = boxToAnswers[currentQuestionBox][i];
-
-                int index = i;
-                answerButtons[i].onClick.RemoveAllListeners();
-                answerButtons[i].onClick.AddListener(() => CheckAnswer(index));
-            }
-        }
-    }
-
-    private void CheckAnswer(int selectedIndex)
-    {
-        if (selectedIndex == correctAnswers[currentQuestionBox])
+        if (selectedIndex == correctAnswerIndex)
         {
             Debug.Log("إجابة صحيحة!");
-            solvedQuestions.Add(currentQuestionBox); // تسجيل السؤال كـ"محلول"
-            questionText.text = "تم حل السؤال! عد إلى الساحة."; // رسالة انتهاء السؤال
+            SceneManager.LoadScene(returnSceneName);
         }
         else
         {
-            Debug.Log("إجابة خاطئة، حاول مرة أخرى.");
+            Debug.Log("إجابة خاطئة! جرّب مرة تانية.");
+            // بإمكانك هنا تعرض مؤثر صوتي أو رسالة
         }
     }
-    public void MarkQuestionSolved(string questionSceneName)
-    {
-        solvedQuestions.Add(questionSceneName);
-        SceneManager.LoadScene("sa7et ilmadraseh"); // العودة إلى المشهد الرئيسي
-    }
-
-
 }
+///liuyhjkiughjuyhjuyhjujhn
