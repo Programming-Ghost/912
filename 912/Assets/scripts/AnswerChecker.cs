@@ -12,7 +12,7 @@ public class AnswerChecker : MonoBehaviour
 
     void Start()
     {
-        feedbackText.text = "";
+        feedbackText = GetComponentInChildren<Text>();
     }
 
     public void CheckAnswer()
