@@ -7,6 +7,8 @@ public class SceneOpener : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Triggered by: " + other.gameObject.name);
+
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player touched the trigger!"); // هاي السطر اللي بدك تشوفه
