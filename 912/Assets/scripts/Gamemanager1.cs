@@ -1,9 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-public class QuestionManager : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class Gamemanager1 : MonoBehaviour
 {
+
     public Button[] optionButtons;
     public int correctAnswerIndex;
     public string returnSceneName;
@@ -32,3 +34,4 @@ public class QuestionManager : MonoBehaviour
     }
 }
 ///liuyhjkiughjuyhjuyhjujhn
+
