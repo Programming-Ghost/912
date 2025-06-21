@@ -372,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415194450}
-  - component: {fileID: 415194449}
+  - component: {fileID: 415194451}
   m_Layer: 0
   m_Name: idk
   m_TagString: Untagged
@@ -380,25 +380,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &415194449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415194448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf966a9e20b4ee64bb0ca32af2017c32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  optionButtons:
-  - {fileID: 567028802}
-  - {fileID: 1709458364}
-  - {fileID: 194883632}
-  - {fileID: 1835558781}
-  correctAnswerIndex: 2
-  returnSceneName: sa7et ilmadraseh
 --- !u!4 &415194450
 Transform:
   m_ObjectHideFlags: 0
@@ -414,6 +395,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &415194451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415194448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74d3cd9e7c06594438160dde48fe333b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionButtons:
+  - {fileID: 567028802}
+  - {fileID: 1709458364}
+  - {fileID: 194883632}
+  - {fileID: 1835558781}
+  correctAnswerIndex: 2
+  returnSceneName: sa7et ilmadraseh
 --- !u!1 &567028800
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +508,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: isCorrect = false
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: d963e99052e6d7f4185d2038c9dbc995, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &567028803
@@ -1485,7 +1497,7 @@ RectTransform:
   m_GameObject: {fileID: 2112881082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.347021, y: 4.189858, z: 264.2042}
+  m_LocalScale: {x: 4.400303, y: 4.189858, z: 264.2042}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1318298636}
@@ -1499,7 +1511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.8352, y: 6.0967}
+  m_AnchoredPosition: {x: -16, y: 6.0967}
   m_SizeDelta: {x: 74.4634, y: -3.7587}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2112881084

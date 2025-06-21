@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/try5.unity
     guid: e202f1a06b1def0498815cfb1f5f7299
+  - enabled: 1
+    path: Assets/Scenes/EndOfGame.unity
+    guid: 3d85d6ccf6820004ab304fd18673725d
   m_configObjects: {}
