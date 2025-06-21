@@ -122,57 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &116587466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 116587468}
-  - component: {fileID: 116587467}
-  m_Layer: 0
-  m_Name: idk
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &116587467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116587466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf966a9e20b4ee64bb0ca32af2017c32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  optionButtons:
-  - {fileID: 1763799502}
-  - {fileID: 1253460479}
-  - {fileID: 1379994685}
-  - {fileID: 1489761947}
-  correctAnswerIndex: 0
-  returnSceneName: sa7et ilmadraseh
---- !u!4 &116587468
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116587466}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2723.4902, y: 20.047134, z: -0.025710821}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388876067
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,10 +181,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 9
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -243,7 +192,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: White-Burgundy(5mri)-Light Orange(mshmshy)
 --- !u!222 &388876070
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -288,6 +237,57 @@ RectTransform:
   m_AnchoredPosition: {x: 4.3684, y: 0}
   m_SizeDelta: {x: 108.7367, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &478989611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 478989613}
+  - component: {fileID: 478989612}
+  m_Layer: 0
+  m_Name: idk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &478989612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478989611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74d3cd9e7c06594438160dde48fe333b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionButtons:
+  - {fileID: 1763799502}
+  - {fileID: 1253460479}
+  - {fileID: 1379994685}
+  - {fileID: 1489761947}
+  correctAnswerIndex: 1
+  returnSceneName: library
+--- !u!4 &478989613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478989611}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2723.4902, y: 20.047134, z: -0.025710821}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &557799265
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 24e9475ff29ed8e4887cb89d57afa5ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 15593223ae248c74bb4d44b71241d695, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -622,10 +622,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 9
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -633,7 +633,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4
+  m_Text: Green-Light Orange(mshmshy)-Burgundy(5mri)
 --- !u!222 &870030170
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -925,10 +925,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 9
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -936,7 +936,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: White-Light Orange(mshmshy)-Burgundy(5mri)
 --- !u!222 &1296959998
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1256,7 +1256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: How many floors does Dar Al Uloom School consist of?
+  m_Text: Mention the main colors of the main building of Dar Al Uloom Schools.
 --- !u!222 &1411230920
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1473,10 +1473,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 9
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 9
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1484,7 +1484,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: White-Light orange(mshmshy)-Brown
 --- !u!222 &1516814089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1715,6 +1715,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1571631149}
-  - {fileID: 116587468}
   - {fileID: 1394277736}
   - {fileID: 699236512}
+  - {fileID: 478989613}
