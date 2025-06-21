@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPoint: {fileID: 559115866}
-  moveSpeed: 19
+  moveSpeed: 3
   nextSceneName: library
   shouldMoveToTarget: 1
 --- !u!1 &423523786
