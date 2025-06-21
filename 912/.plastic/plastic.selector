@@ -1,4 +1,0 @@
-repository "DEAD CAMEL/912@18968280593853@cloud"
-  path "/"
-    br "/main"
-    co "/main"
