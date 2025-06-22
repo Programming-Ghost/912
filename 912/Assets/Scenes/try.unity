@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 194883632}
   - component: {fileID: 194883635}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 1994
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 415194448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74d3cd9e7c06594438160dde48fe333b, type: 3}
+  m_Script: {fileID: 11500000, guid: 21c578e415545c54b9f236173e477e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   optionButtons:
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 567028802}
   - component: {fileID: 567028805}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 1996
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 1709458364}
   - component: {fileID: 1709458367}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 1993
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1181,7 +1181,7 @@ GameObject:
   - component: {fileID: 1835558781}
   - component: {fileID: 1835558784}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 1999
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1497,7 +1497,7 @@ RectTransform:
   m_GameObject: {fileID: 2112881082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.400303, y: 4.189858, z: 264.2042}
+  m_LocalScale: {x: 17.306952, y: 15.305537, z: 745.4242}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1318298636}
@@ -1511,7 +1511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: 6.0967}
+  m_AnchoredPosition: {x: 6, y: 6.0967}
   m_SizeDelta: {x: 74.4634, y: -3.7587}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2112881084

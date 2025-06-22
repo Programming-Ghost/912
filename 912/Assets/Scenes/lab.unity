@@ -377,7 +377,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 22706053}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eef2dfdde070b6448fbfa47eca98a0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 375bba772d2a7894a8a7af8e4bada5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: sa7et ilmadraseh
@@ -1200,7 +1200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 84487d73ca4b791498332d8f6858417f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8aef6862f7269642a8acf74bfc37993, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5219,7 +5219,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 332133318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Script: {fileID: 11500000, guid: b54439bc1087876439e4eceeda2261e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   handleRange: 1
@@ -5249,7 +5249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b56d9fa0e8bd6e409ed188db38a692c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ec2d8e5f90f6c248801db36bb4aae2b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14278,7 +14278,7 @@ GameObject:
   - component: {fileID: 1058428710}
   - component: {fileID: 1058428709}
   - component: {fileID: 1058428715}
-  - component: {fileID: 1058428714}
+  - component: {fileID: 1058428716}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -14295,12 +14295,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1058428708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e71f5030341d4e46ac51a58fda6249b, type: 3}
+  m_Script: {fileID: 11500000, guid: e9db6c909ef82c645a15efef3eba6be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  gravity: 20
-  jump: 12
+  _FixedTouchField: {fileID: 1133783171}
+  _CameraLook: {fileID: 1231767163}
 --- !u!143 &1058428710
 CharacterController:
   m_ObjectHideFlags: 0
@@ -14334,7 +14333,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058428708}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14385,28 +14384,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058428708}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9888666, z: -0, w: 0.14880429}
-  m_LocalPosition: {x: -8.01, y: 0.76, z: 12.8}
+  m_LocalRotation: {x: -0, y: -0.90583456, z: -0, w: -0.4236317}
+  m_LocalPosition: {x: -8.006699, y: 0.76, z: 12.802193}
   m_LocalScale: {x: 0.52972007, y: 0.69703686, z: 0.69703686}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1231767159}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 162.885, z: 0}
---- !u!114 &1058428714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058428708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dde34a998bf46be459d0b8bb4160f8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystick: {fileID: 332133320}
-  SpeedMove: 15
+  m_LocalEulerAnglesHint: {x: 0, y: -230.128, z: 0}
 --- !u!114 &1058428715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14416,11 +14401,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 1058428708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21482fea1ca520d4ca6088da02d8eaad, type: 3}
+  m_Script: {fileID: 11500000, guid: 26e47f326de0b7641b1765dd43bdcacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _FixedTouchField: {fileID: 1133783171}
-  _CameraLook: {fileID: 1231767163}
+  joystick: {fileID: 332133320}
+  SpeedMove: 5
+--- !u!54 &1058428716
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058428708}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1074847456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15677,7 +15689,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1133783169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c52265ef489074340b07c3dfca780bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: bb07900f8b690934d83fbc731863f845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TouchDist: {x: 0, y: 0}
@@ -17052,13 +17064,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231767158}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0034059691, y: -0.29299822, z: -0.018958341, w: 0.95591897}
-  m_LocalPosition: {x: 0, y: 0.6, z: -0.01}
+  m_LocalRotation: {x: 0.009185898, y: -0.021935878, z: 0.016930448, w: -0.9995739}
+  m_LocalPosition: {x: 0.00000023339321, y: 0.60000014, z: -0.00999899}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1058428713}
-  m_LocalEulerAnglesHint: {x: -1.01, y: -34.064, z: -1.963}
+  m_LocalEulerAnglesHint: {x: -1.01, y: 362.532, z: -1.963}
 --- !u!81 &1231767161
 AudioListener:
   m_ObjectHideFlags: 0
@@ -17127,12 +17139,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1231767158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd109a9e9baaf244f80f8a50c44b8bf1, type: 3}
+  m_Script: {fileID: 11500000, guid: ff7ae4940704b2a46a3b5b8c979ea733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerBody: {fileID: 1058428713}
   LockAxis: {x: 0, y: 0}
-  Sensivity: 30
+  Sensivity: 40
 --- !u!1 &1234097478
 GameObject:
   m_ObjectHideFlags: 0
