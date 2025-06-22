@@ -348,7 +348,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 94310052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eef2dfdde070b6448fbfa47eca98a0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 375bba772d2a7894a8a7af8e4bada5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: try2
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 290936493}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c52265ef489074340b07c3dfca780bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: bb07900f8b690934d83fbc731863f845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TouchDist: {x: 0, y: 0}
@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 84487d73ca4b791498332d8f6858417f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 400ae5005ad4e3f4fa92c63dc4b8ab04, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1478,11 +1478,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 397032395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2649fa872b6bc044bf431c5b5d0606e, type: 3}
+  m_Script: {fileID: 11500000, guid: 98c2371260e50a040a0e772dd25edc83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {fileID: 559115866}
-  moveSpeed: 8
+  targetPoint: {fileID: 1121019716}
+  moveSpeed: 20
   nextSceneName: library
   shouldMoveToTarget: 1
 --- !u!1 &423523786
@@ -2378,7 +2378,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 757245899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eef2dfdde070b6448fbfa47eca98a0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 375bba772d2a7894a8a7af8e4bada5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: try
@@ -2457,7 +2457,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 104.69074
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2484,12 +2484,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 810505098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd109a9e9baaf244f80f8a50c44b8bf1, type: 3}
+  m_Script: {fileID: 11500000, guid: ff7ae4940704b2a46a3b5b8c979ea733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerBody: {fileID: 1014234639}
   LockAxis: {x: 0, y: 0}
-  Sensivity: 40
+  Sensivity: 15
 --- !u!1 &815430120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2589,6 +2589,7 @@ Transform:
   m_GameObject: {fileID: 815430120}
   serializedVersion: 2
   m_LocalRotation: {x: -0.32158253, y: 0.021508563, z: 0.0073311864, w: 0.9466089}
+  m_LocalPosition: {x: -70.4369, y: -3.5, z: -53.5787}
   m_LocalPosition: {x: -70.6, y: 0.99, z: -57.07}
   m_LocalScale: {x: 360.70392, y: -0.21062002, z: 5.3745704}
   m_ConstrainProportionsScale: 0
@@ -2818,7 +2819,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 852244912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eef2dfdde070b6448fbfa47eca98a0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 375bba772d2a7894a8a7af8e4bada5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: try1
@@ -3572,8 +3573,8 @@ GameObject:
   - component: {fileID: 1014234642}
   - component: {fileID: 1014234636}
   - component: {fileID: 1014234643}
+  - component: {fileID: 1014234640}
   - component: {fileID: 1014234644}
-  - component: {fileID: 1014234645}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -3673,6 +3674,20 @@ Transform:
   - {fileID: 810505099}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014234640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014234635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e47f326de0b7641b1765dd43bdcacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 1547213424}
+  SpeedMove: 30
 --- !u!54 &1014234642
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3730,21 +3745,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1014234635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dde34a998bf46be459d0b8bb4160f8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystick: {fileID: 1547213424}
-  SpeedMove: 15
---- !u!114 &1014234645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014234635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21482fea1ca520d4ca6088da02d8eaad, type: 3}
+  m_Script: {fileID: 11500000, guid: e9db6c909ef82c645a15efef3eba6be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _FixedTouchField: {fileID: 290936497}
@@ -5824,7 +5825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7561589431487153075, guid: 9123a496f00e31842b80b49e7b41ac8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7561589431487153075, guid: 9123a496f00e31842b80b49e7b41ac8b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6028,8 +6029,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547213420}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6038,7 +6039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 100, y: 86}
+  m_AnchoredPosition: {x: 128, y: 106}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1547213422
@@ -6061,7 +6062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b56d9fa0e8bd6e409ed188db38a692c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8cb730a92fe2f3647a796b319bbf56c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6088,7 +6089,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1547213420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Script: {fileID: 11500000, guid: b54439bc1087876439e4eceeda2261e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   handleRange: 1

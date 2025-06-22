@@ -584,7 +584,7 @@ RectTransform:
   m_GameObject: {fileID: 1201577210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.606587, y: 3.643, z: 3.643}
+  m_LocalScale: {x: 12.927955, y: 6.5118594, z: 5.4721503}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1244831838}
@@ -661,7 +661,7 @@ RectTransform:
   m_GameObject: {fileID: 1244831837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7337394, y: 2.1201236, z: 1.1509275}
+  m_LocalScale: {x: 0.6264586, y: 1.985199, z: 1.0776825}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201577211}
@@ -704,7 +704,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WHY DID U QUIT!!!!
+  m_Text: WHY DID YOU QUIT!!!!
 --- !u!222 &1244831840
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -739,7 +739,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1775574166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74d3cd9e7c06594438160dde48fe333b, type: 3}
+  m_Script: {fileID: 11500000, guid: 21c578e415545c54b9f236173e477e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   optionButtons:
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 1921164904}
   - component: {fileID: 1921164903}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: go back now
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
