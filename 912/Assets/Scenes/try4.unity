@@ -464,6 +464,7 @@ GameObject:
   - component: {fileID: 532687546}
   - component: {fileID: 532687545}
   - component: {fileID: 532687544}
+  - component: {fileID: 532687547}
   - component: {fileID: 532687543}
   m_Layer: 5
   m_Name: 3
@@ -601,6 +602,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532687541}
   m_CullTransparentMesh: 1
+--- !u!114 &532687547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532687541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be8f7c5429524704081ce9a1ff3630c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myButton: {fileID: 532687544}
 --- !u!1 &688113979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,7 +1280,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1118761918}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21c578e415545c54b9f236173e477e0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 74d3cd9e7c06594438160dde48fe333b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   optionButtons:
