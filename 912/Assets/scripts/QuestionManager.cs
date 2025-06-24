@@ -7,6 +7,8 @@ public class QuestionManager : MonoBehaviour
 
     [Header("Target Movement Settings")]
     public Transform targetPoint; // المكان الذي يجب على اللاعب الوصول إليه
+    private int correctAnswers = 0;
+    public Transform targetPoint;
     public float moveSpeed = 3f;
     public string nextSceneName;
 
@@ -42,10 +44,16 @@ public class QuestionManager : MonoBehaviour
         {
             shouldMoveToTarget = false;
             SceneManager.LoadScene(nextSceneName);
+            if (Vector3.Distance(player.transform.position, targetPoint.position) < 0.1f)
+            {
+                shouldMoveToTarget = false;
+                SceneManager.LoadScene(nextSceneName);
+            }
         }
     }
 
-    public static void RegisterCorrectAnswer()
+    // استدعِ هذه الدالة من سكربت السؤال عند كل إجابة صحيحة
+    public void RegisterCorrectAnswer()
     {
         correctAnswers++;
         Debug.Log("إجابة صحيحة! العدد: " + correctAnswers);
@@ -62,6 +70,8 @@ public class QuestionManager : MonoBehaviour
                 }
             }
             correctAnswers = 0; // إعادة العداد للمرحلة التالية
+            shouldMoveToTarget = true;
+            correctAnswers = 0;
         }
     }
 

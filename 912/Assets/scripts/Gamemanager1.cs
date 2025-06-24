@@ -1,37 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class Gamemanager1 : MonoBehaviour
-{
 
-    public Button[] optionButtons;
-    public int correctAnswerIndex;
-    public string returnSceneName;
+public class QuestionManager : MonoBehaviour
+{
+    private int correctAnswers = 0;
+    public Transform targetPoint;
+    public float moveSpeed = 3f;
+    public string nextSceneName;
+    public bool shouldMoveToTarget = false;
+    private GameObject player;
 
     void Start()
     {
-        for (int i = 0; i < optionButtons.Length; i++)
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    void Update()
+    {
+        if (shouldMoveToTarget && player != null && targetPoint != null)
         {
-            int index = i; // لحل مشكلة الـ Closure
-            optionButtons[i].onClick.AddListener(() => CheckAnswer(index));
+            player.transform.position = Vector3.MoveTowards(
+                player.transform.position,
+                targetPoint.position,
+                moveSpeed * Time.deltaTime
+            );
+
+            if (Vector3.Distance(player.transform.position, targetPoint.position) < 0.1f)
+            {
+                shouldMoveToTarget = false;
+                SceneManager.LoadScene(nextSceneName);
+            }
         }
     }
 
-    void CheckAnswer(int selectedIndex)
+    // استدعِ هذه الدالة من سكربت السؤال عند كل إجابة صحيحة
+    public void RegisterCorrectAnswer()
     {
-        if (selectedIndex == correctAnswerIndex)
+        correctAnswers++;
+        Debug.Log("إجابة صحيحة! العدد: " + correctAnswers);
+
+        if (correctAnswers == 3)
         {
-            Debug.Log("إجابة صحيحة!");
-            SceneManager.LoadScene(returnSceneName);
-        }
-        else
-        {
-            Debug.Log("إجابة خاطئة! جرّب مرة تانية.");
-            // بإمكانك هنا تعرض مؤثر صوتي أو رسالة
+            shouldMoveToTarget = true;
+            correctAnswers = 0;
         }
     }
 }
-///liuyhjkiughjuyhjuyhjujhn
-
