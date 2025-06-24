@@ -427,7 +427,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   sceneName: try2
+=======
+  sceneName: 
+>>>>>>> Stashed changes
 =======
   sceneName: 
 >>>>>>> Stashed changes
@@ -2219,9 +2223,12 @@ Transform:
   m_PrefabInstance: {fileID: 633427112}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &710314749
 GameObject:
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &685796565
 PrefabInstance:
 >>>>>>> Stashed changes
@@ -2326,6 +2333,9 @@ Transform:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f276fcb01c7bfd4ab4a1b4211a7b026, type: 3}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1001 &710378090
 PrefabInstance:
@@ -2502,7 +2512,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2c9f6d988e77b8f46919cf52ab0b8ec5, type: 3}
       propertyPath: m_LocalPosition.x
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: -2806.11
+=======
+      value: -2800.5
+>>>>>>> Stashed changes
 =======
       value: -2800.5
 >>>>>>> Stashed changes
@@ -2514,7 +2528,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2c9f6d988e77b8f46919cf52ab0b8ec5, type: 3}
       propertyPath: m_LocalPosition.z
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: 41.37
+=======
+      value: 38.02
+>>>>>>> Stashed changes
 =======
       value: 38.02
 >>>>>>> Stashed changes
@@ -2595,10 +2613,13 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Size: {x: 0.49138382, y: 0.3535355, z: 0.36217937}
   m_Center: {x: -0.012915706, y: -0.021645164, z: -0.001090822}
 --- !u!114 &757245901
 =======
+=======
+>>>>>>> Stashed changes
   m_Size: {x: 0.45341438, y: 0.30559775, z: 0.36217937}
   m_Center: {x: 0.0050018644, y: 0.003716272, z: -0.0010908145}
 --- !u!114 &757245903
@@ -2614,6 +2635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375bba772d2a7894a8a7af8e4bada5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   sceneName: try
 --- !u!1 &810505098
@@ -2765,6 +2787,12 @@ MonoBehaviour:
 --- !u!1001 &794387014
 PrefabInstance:
   m_ObjectHideFlags: 0
+=======
+  sceneName: 
+--- !u!1001 &794387014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+>>>>>>> Stashed changes
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
@@ -2850,6 +2878,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1603213778}
   m_SourcePrefab: {fileID: 100100000, guid: 5ef3d112e977ca944b8c6cb4cbb47ab6, type: 3}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &815430120
 GameObject:
@@ -3305,7 +3336,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   sceneName: try1
+=======
+  sceneName: 
+>>>>>>> Stashed changes
 =======
   sceneName: 
 >>>>>>> Stashed changes
@@ -4048,7 +4083,11 @@ MeshFilter:
   m_GameObject: {fileID: 1001214016}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1014234635
+=======
+--- !u!1 &1023275618
+>>>>>>> Stashed changes
 =======
 --- !u!1 &1023275618
 >>>>>>> Stashed changes
@@ -4059,6 +4098,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   - component: {fileID: 1014234639}
   - component: {fileID: 1014234638}
@@ -4072,17 +4112,23 @@ GameObject:
   m_Name: player
   m_TagString: Player
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 1023275619}
   - component: {fileID: 1023275621}
   - component: {fileID: 1023275620}
   m_Layer: 0
   m_Name: main camera
   m_TagString: Untagged
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 --- !u!143 &1014234636
 CharacterController:
@@ -4164,11 +4210,15 @@ MeshFilter:
 =======
 --- !u!4 &1023275619
 >>>>>>> Stashed changes
+=======
+--- !u!4 &1023275619
+>>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1014234635}
   serializedVersion: 2
@@ -4183,6 +4233,8 @@ Transform:
 --- !u!54 &1014234642
 Rigidbody:
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1023275618}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000003774895, y: -0, z: -0, w: 1}
@@ -4194,11 +4246,15 @@ Rigidbody:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1023275620
 AudioListener:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1014234635}
   serializedVersion: 4
@@ -4245,15 +4301,21 @@ BoxCollider:
 --- !u!114 &1014234644
 MonoBehaviour:
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1023275618}
   m_Enabled: 1
 --- !u!20 &1023275621
 Camera:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1014234635}
   m_Enabled: 1
@@ -4278,6 +4340,8 @@ MonoBehaviour:
   joystick: {fileID: 1547213424}
   SpeedMove: 18
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1023275618}
   m_Enabled: 1
   serializedVersion: 2
@@ -4323,6 +4387,9 @@ MonoBehaviour:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1056947896
 GameObject:
@@ -6786,6 +6853,7 @@ Transform:
   m_Father: {fileID: 914700445}
   m_LocalEulerAnglesHint: {x: 0, y: -176.547, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1547213420
 GameObject:
   m_ObjectHideFlags: 0
@@ -6827,6 +6895,8 @@ RectTransform:
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1547213422
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1603213772 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ef3d112e977ca944b8c6cb4cbb47ab6, type: 3}
@@ -6838,12 +6908,16 @@ Transform:
   m_PrefabInstance: {fileID: 794387014}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1603213777
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1547213420}
   m_Enabled: 1
@@ -6897,6 +6971,8 @@ MonoBehaviour:
   background: {fileID: 1547213421}
   handle: {fileID: 391001985}
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1603213772}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6960,6 +7036,9 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1001 &1606938985
 PrefabInstance:
@@ -8320,6 +8399,7 @@ SceneRoots:
   - {fileID: 852244911}
   - {fileID: 94310051}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 1014234639}
   - {fileID: 211444234}
   - {fileID: 710314751}
@@ -8327,6 +8407,9 @@ SceneRoots:
   - {fileID: 3787860802839836932}
   - {fileID: 211444234}
   - {fileID: 1105038523}
+=======
+  - {fileID: 794387014}
+>>>>>>> Stashed changes
 =======
   - {fileID: 794387014}
 >>>>>>> Stashed changes
