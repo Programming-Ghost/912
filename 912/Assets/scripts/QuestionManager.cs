@@ -3,13 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class QuestionManager : MonoBehaviour
 {
-    public static int correctAnswers = 0;
-    public Transform targetPoint; // المكان اللي اللاعب لازم يروح له بعد الإجابة
+    private int correctAnswers = 0;
+    public Transform targetPoint;
     public float moveSpeed = 3f;
     public string nextSceneName;
     public bool shouldMoveToTarget = false;
     private GameObject player;
-
 
     void Start()
     {
@@ -26,7 +25,6 @@ public class QuestionManager : MonoBehaviour
                 moveSpeed * Time.deltaTime
             );
 
-            // إذا وصل للمكان
             if (Vector3.Distance(player.transform.position, targetPoint.position) < 0.1f)
             {
                 shouldMoveToTarget = false;
@@ -35,21 +33,16 @@ public class QuestionManager : MonoBehaviour
         }
     }
 
-    public static void RegisterCorrectAnswer()
+    // استدعِ هذه الدالة من سكربت السؤال عند كل إجابة صحيحة
+    public void RegisterCorrectAnswer()
     {
         correctAnswers++;
         Debug.Log("إجابة صحيحة! العدد: " + correctAnswers);
 
-        // بعد 3 إجابات صحيحة نبدأ الحركة
         if (correctAnswers == 3)
         {
-            GameObject manager = GameObject.Find("GameManager");
-            if (manager != null)
-            {
-                manager.GetComponent<QuestionManager>().shouldMoveToTarget = true;
-            }
-
-            correctAnswers = 0; // نعيده صفر للمرحلة التالية
+            shouldMoveToTarget = true;
+            correctAnswers = 0;
         }
     }
 }

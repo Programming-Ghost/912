@@ -1,24 +1,27 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-//Made by Rajendra Abhinaya, 2023
+// Made by Rajendra Abhinaya, 2023 — Modified by Ahmad & Copilot
 
+[RequireComponent(typeof(AudioSource))]
 public class Despawn : MonoBehaviour
 {
-    private int despawnPercentage;
-    private float despawnTime;
-    private float distanceFromPlayer;
+    [Header("Despawn Settings")]
+    [SerializeField] private int despawnPercentage = 100;
+    [SerializeField] private float despawnTime = 10f;
+    [SerializeField] private float distanceFromPlayer = 20f;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioClip clip;
+    [SerializeField] private float volume = 1f;
+    [SerializeField] private float volumeVariation = 0.1f;
+    [SerializeField] private float pitchVariation = 0.1f;
+
     private GameObject player;
-    private AudioClip clip;
-    private float volume;
-    private float variation;
-    private float volumeVariation;
-    private float pitchVariation;
     private AudioSource audioSource;
 
-    //Used to receive the variables' values from the parent object
-    public void SetVariables(int despawnPercentage, float despawnTime, float distanceFromPlayer, GameObject player, AudioClip clip, float volume, float volumeVariation, float pitchVariation){
+    public void SetVariables(int despawnPercentage, float despawnTime, float distanceFromPlayer, GameObject player, AudioClip clip, float volume, float volumeVariation, float pitchVariation)
+    {
         this.despawnPercentage = despawnPercentage;
         this.despawnTime = despawnTime;
         this.distanceFromPlayer = distanceFromPlayer;
@@ -29,39 +32,59 @@ public class Despawn : MonoBehaviour
         this.pitchVariation = pitchVariation;
     }
 
-    void Start(){
-        //Plays a random audio clip from the list of audio clips set in the object
+    private void Start()
+    {
         audioSource = GetComponent<AudioSource>();
-        audioSource.pitch = 1f + Random.Range(-pitchVariation/2, pitchVariation/2);
-        audioSource.PlayOneShot(clip, volume + Random.Range(-volumeVariation, volumeVariation));
+        PlayRandomizedClip();
     }
 
-    //Starts the selected despawn mode's coroutine function
-    public void BeginCoroutine(string coroutine){
-        switch(coroutine){
+    private void PlayRandomizedClip()
+    {
+        if (clip != null)
+        {
+            float pitch = 1f + Random.Range(-pitchVariation / 2f, pitchVariation / 2f);
+            float vol = Mathf.Clamp01(volume + Random.Range(-volumeVariation, volumeVariation));
+            audioSource.pitch = pitch;
+            audioSource.PlayOneShot(clip, vol);
+        }
+    }
+
+    public void BeginCoroutine(string mode)
+    {
+        switch (mode)
+        {
             case "Timed":
                 StartCoroutine(DespawnCoroutine());
                 break;
             case "Distance from Player":
-                StartCoroutine(CheckDistance());
+                if (player != null)
+                    StartCoroutine(CheckDistance());
                 break;
         }
     }
 
-    //Despawns the debris based on the despawn percentage
-    public void DespawnDebris(){
-        int despawnCount = transform.childCount * despawnPercentage/100;
-        for(int i = transform.childCount-1; i >= transform.childCount-despawnCount; i--){
-            Destroy(transform.GetChild(i).gameObject);
+    private void DespawnDebris()
+    {
+        int totalChildren = transform.childCount;
+        int despawnCount = Mathf.RoundToInt(totalChildren * despawnPercentage / 100f);
+
+        for (int i = totalChildren - 1; i >= totalChildren - despawnCount; i--)
+        {
+            if (i >= 0)
+                Destroy(transform.GetChild(i).gameObject);
         }
     }
 
-    //Checks the distance between the debris and the player every 0.5 seconds after a 5 second delay
-    public IEnumerator CheckDistance(){
+    private IEnumerator CheckDistance()
+    {
         yield return new WaitForSeconds(5f);
-        while(true){
-            Vector3 distance = transform.position - player.transform.position;
-            if(distance.magnitude > distanceFromPlayer){
+        while (true)
+        {
+            if (player == null) yield break;
+
+            float distance = Vector3.Distance(transform.position, player.transform.position);
+            if (distance > distanceFromPlayer)
+            {
                 DespawnDebris();
                 yield break;
             }
@@ -69,8 +92,8 @@ public class Despawn : MonoBehaviour
         }
     }
 
-    //Despawns the debris after a set amount of time
-    public IEnumerator DespawnCoroutine(){
+    private IEnumerator DespawnCoroutine()
+    {
         yield return new WaitForSeconds(despawnTime);
         DespawnDebris();
     }
