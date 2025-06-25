@@ -153,8 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 2006807630}
-  correctAnswerIndex: 0
-  returnSceneName: main menu
+  correctOptionIndex: 0
+  nextSceneName: main menu
 --- !u!4 &57296026
 Transform:
   m_ObjectHideFlags: 0

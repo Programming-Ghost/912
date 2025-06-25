@@ -495,8 +495,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 1229561056}
-  correctAnswerIndex: 0
-  returnSceneName: sa7et ilmadraseh
+  correctOptionIndex: 0
+  nextSceneName: set
 --- !u!4 &1185744980
 Transform:
   m_ObjectHideFlags: 0

@@ -539,8 +539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 1010815108}
-  correctAnswerIndex: 0
-  returnSceneName: main menu
+  correctOptionIndex: 0
+  nextSceneName: main menu
 --- !u!4 &907847309
 Transform:
   m_ObjectHideFlags: 0
@@ -1180,8 +1180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 1076981077}
-  correctAnswerIndex: 0
-  returnSceneName: Peak2
+  correctOptionIndex: 0
+  nextSceneName: Peak2
 --- !u!4 &1648428397
 Transform:
   m_ObjectHideFlags: 0
@@ -1228,8 +1228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 498039919}
-  correctAnswerIndex: 0
-  returnSceneName: library
+  correctOptionIndex: 0
+  nextSceneName: library
 --- !u!4 &1952832268
 Transform:
   m_ObjectHideFlags: 0

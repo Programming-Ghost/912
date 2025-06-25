@@ -409,8 +409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 1774580663}
-  correctAnswerIndex: 0
-  returnSceneName: staystill
+  correctOptionIndex: 0
+  nextSceneName: staystill
 --- !u!1 &652595026
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,8 +791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 702553769}
-  correctAnswerIndex: 0
-  returnSceneName: sa7et ilmadraseh
+  correctOptionIndex: 0
+  nextSceneName: sa7a
 --- !u!4 &790531222
 Transform:
   m_ObjectHideFlags: 0
@@ -946,8 +946,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 1967558592}
-  correctAnswerIndex: 0
-  returnSceneName: Peak
+  correctOptionIndex: 0
+  nextSceneName: Peak
 --- !u!1 &1259404486
 GameObject:
   m_ObjectHideFlags: 0

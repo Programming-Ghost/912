@@ -1396,8 +1396,8 @@ MonoBehaviour:
   - {fileID: 1885905721}
   - {fileID: 617171633}
   - {fileID: 826444131}
-  correctAnswerIndex: 3
-  returnSceneName: library
+  correctOptionIndex: 3
+  nextSceneName: library
 --- !u!1 &1749200711
 GameObject:
   m_ObjectHideFlags: 0

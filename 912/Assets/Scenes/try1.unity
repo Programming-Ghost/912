@@ -1514,8 +1514,8 @@ MonoBehaviour:
   - {fileID: 335454864}
   - {fileID: 699047409}
   - {fileID: 775479370}
-  correctAnswerIndex: 2
-  returnSceneName: library
+  correctOptionIndex: 2
+  nextSceneName: library
 --- !u!4 &1402979077
 Transform:
   m_ObjectHideFlags: 0

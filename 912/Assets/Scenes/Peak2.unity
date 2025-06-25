@@ -1223,8 +1223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionButtons:
   - {fileID: 2056341273}
-  correctAnswerIndex: 0
-  returnSceneName: library
+  correctOptionIndex: 0
+  nextSceneName: set1
 --- !u!4 &2122043526
 Transform:
   m_ObjectHideFlags: 0

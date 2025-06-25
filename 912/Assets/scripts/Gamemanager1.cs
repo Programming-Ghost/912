@@ -1,48 +1,38 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class QuestionManager : MonoBehaviour
+public class Gamemanager1 : MonoBehaviour
 {
-    private int correctAnswers = 0;
-    public Transform targetPoint;
-    public float moveSpeed = 3f;
-    public string nextSceneName;
-    public bool shouldMoveToTarget = false;
-    private GameObject player;
+    [Header("Option Buttons")]
+    public Button[] optionButtons;      // مصفوفة ديناميكية بأي عدد
+    [Tooltip("Index (0-based) of the correct button in optionButtons")]
+    public int correctOptionIndex;      
+
+    [Header("Next Scene")]
+    public string nextSceneName;        // اسم المشهد الهدف
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
-
-    void Update()
-    {
-        if (shouldMoveToTarget && player != null && targetPoint != null)
+        // اربط لكل زر حدث الضغط
+        for (int i = 0; i < optionButtons.Length; i++)
         {
-            player.transform.position = Vector3.MoveTowards(
-                player.transform.position,
-                targetPoint.position,
-                moveSpeed * Time.deltaTime
-            );
-
-            if (Vector3.Distance(player.transform.position, targetPoint.position) < 0.1f)
-            {
-                shouldMoveToTarget = false;
-                SceneManager.LoadScene(nextSceneName);
-            }
+            int idx = i;  // عشان الكلوجر
+            optionButtons[i].onClick.AddListener(() => OnOptionSelected(idx));
         }
     }
 
-    // استدعِ هذه الدالة من سكربت السؤال عند كل إجابة صحيحة
-    public void RegisterCorrectAnswer()
+    void OnOptionSelected(int index)
     {
-        correctAnswers++;
-        Debug.Log("إجابة صحيحة! العدد: " + correctAnswers);
-
-        if (correctAnswers == 3)
+        if (index == correctOptionIndex)
         {
-            shouldMoveToTarget = true;
-            correctAnswers = 0;
+            // إجابة صحيحة → انتقل للمشهد التالي
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            // إجابة خاطئة → تعامل حسب ما بدك
+            Debug.Log("اختيار خاطئ، حاول مرة ثانية.");
         }
     }
 }

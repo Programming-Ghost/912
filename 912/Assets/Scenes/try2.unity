@@ -696,8 +696,8 @@ MonoBehaviour:
   - {fileID: 203604773}
   - {fileID: 1157260876}
   - {fileID: 580054957}
-  correctAnswerIndex: 0
-  returnSceneName: sa7et ilmadraseh
+  correctOptionIndex: 0
+  nextSceneName: sa7a
 --- !u!4 &706457155
 Transform:
   m_ObjectHideFlags: 0

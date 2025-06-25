@@ -2,7 +2,8 @@
 using UnityEngine;
 using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UIElements;
-using static UnityEngine.Rendering.VirtualTexturing.Debugging;
+using UnityEngine.Rendering.VirtualTexturing;
+
 
 
 namespace TMPro.Examples
